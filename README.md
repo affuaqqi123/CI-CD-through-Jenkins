@@ -37,7 +37,7 @@ For building job automatically use Poll SCM in build trigger or see the video li
 If you get any issues related to maven please go to Manage Jenkins->Global Tool Configuration->go down to the page and select maven version and name->save (or you can watch this video to get idea about it https://www.youtube.com/watch?v=V-VFrYF_Z1Y )
 Now deploy war to the tomcat container, add credentials of tomcat and provide **/*.war and context path. 
 
-And if you want to set up using periodically build or poll scm then need to install plug in “parameterized scheduler”
+And if you want to set up using periodically build or poll scm then need to install plug in “parameterized scheduler” and in poll scm cron values should be in format */ * * * * if you want it build in every 2 mintues
 Dockerfile is not important in this project , we can remove it if we want 
 
 
